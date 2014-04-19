@@ -25,6 +25,6 @@ twodo Create a 2do workflow for Alfred #alfred #2do :Projects
 twodo Restring ye old guitar #guitar #chore
 ```
 ## Thanks
-To:
 [Dean Jackson](https://github.com/deanishe) and the https://github.com/deanishe/alfred-workflow
+
 [Caleb Grove](http://calebgrove.com/) for the [idea](http://www.alfredforum.com/topic/3811-2do-workflow/?p=22721)
