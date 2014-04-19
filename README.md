@@ -7,6 +7,7 @@ Download a [release](https://github.com/underscorephil/alfred-2do/releases) and 
 
 ## Syntax
 Supports task title, tags, and a speified or default list.
+### Creating a task
 ```
 twodo [Task title] [#tags...] [:list]
 ```
