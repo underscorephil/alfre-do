@@ -18,9 +18,9 @@ def main(wf):
     tags = {tag.strip("#") for tag in tags.split() if tag.startswith("#")}
     task_title = re.sub(r"(?:\#|:)[A-Za-z]+", "", query).strip()
 
-    list = re.search('\s:[A-Z][a-z]+$', query)
-    if list:
-        list = list.group(0).replace(':', '').strip()
+    twodo_list = re.search('\s:[A-Z][a-z]+$', query)
+    if twodo_list:
+        twodo_list = twodo_list.group(0).replace(':', '').strip()
 
     # save default list
     if args.default_list:
@@ -28,8 +28,8 @@ def main(wf):
         wf.add_item('Set list', 'list', valid=False)
         return 0
 
-    # check default list
-    if not list:
+    # check for a default list
+    if not twodo_list:
         default_list = wf.settings.get('default_list', None)
         if not default_list:
             wf.add_item('No Default List Set.',
@@ -40,9 +40,9 @@ def main(wf):
             wf.send_feedback()
             return 0
         else:
-            list = default_list
+            twodo_list = default_list
 
-    url = 'twodo:///add?task=%s&forlist=%s' % (task_title, list)
+    url = 'twodo:///add?task=%s&forlist=%s' % (task_title, twodo_list)
     if len(tags):
         url += '&tags=%s' % (",".join(tags))
     # Send the results to Alfred as XML
