@@ -14,8 +14,7 @@ def main(wf):
     # get query from alfred
     query = args.query
 
-    tags = query
-    tags = {tag.strip("#") for tag in tags.split() if tag.startswith("#")}
+    tags = {tag.strip("#") for tag in query.split() if tag.startswith("#")}
     task_title = re.sub(r"(?:\#|:)[A-Za-z]+", "", query).strip()
 
     twodo_list = re.search('\s:[A-Z][a-z]+$', query)
