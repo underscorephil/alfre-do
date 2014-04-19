@@ -1,6 +1,6 @@
 alfred-2do
 ==========
-
+A simple [Alfred](http://www.alfredapp.com/) workflow for [2do](http://2doapp.com/)
 
 ## Installation
 Download a [release](https://github.com/underscorephil/alfred-2do/releases) and [import](http://support.alfredapp.com/workflows:installing) the workflow.
