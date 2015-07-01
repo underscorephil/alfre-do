@@ -1,4 +1,4 @@
-# alfre-do
+# alfre-do 
 A simple [Alfred](http://www.alfredapp.com/) workflow for [2do](http://2doapp.com/)
 
 ## Installation
