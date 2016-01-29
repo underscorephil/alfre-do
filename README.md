@@ -5,7 +5,7 @@ A simple [Alfred](http://www.alfredapp.com/) workflow for [2do](http://2doapp.co
 Download a [release](https://github.com/underscorephil/alfred-2do/releases) and [import](http://support.alfredapp.com/workflows:installing) the workflow.
 
 ## Syntax
-Supports task title, tags, and a speified or default list.
+Supports task title, tags, and a specified or default list.
 ### Creating a task
 ```
 twodo [Task title] [#tags...] [:list]
