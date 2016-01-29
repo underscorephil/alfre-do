@@ -42,7 +42,7 @@ def main(wf):
             twodo_list = default_list
 
     # structure twodo "api" call
-    url = 'twodo:///add?task=%s&forlist=%s' % (task_title, twodo_list)
+    url = 'twodo://x-callback-url/add?task=%s&forlist=%s' % (task_title, twodo_list)
 
     # Send the results to Alfred as XML
     alfred_title = 'Add task: %s' % (task_title)
